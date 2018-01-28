@@ -1,0 +1,17 @@
+.movie-sections {
+    display: flex;
+    justify-content: space-around;
+}
+
+.search-bar {
+    margin: 1rem 0;
+}
+
+.disabled {
+    pointer-events: none;
+    color: #aaa;
+}
+
+.prev-page, .next-page {
+    cursor: pointer;
+}

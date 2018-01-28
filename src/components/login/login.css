@@ -1,0 +1,49 @@
+.login-page {
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    width: 50rem;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+.input-field {
+    margin-top: 3rem;
+}
+
+.password-input-field {
+    margin-top: 1rem;
+}
+
+.btn-field {
+    margin: 3rem 6rem 0 0;
+}
+
+.btn-field.hasErr {
+    margin: 1rem 6rem 0 0;
+}
+
+button {
+    height: 2rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+.err {
+    text-align: end;
+    margin-top: 1rem;
+    font-size: 16px;
+    color: #de0000;
+}
+
+.input-field, .password-input-field, .btn-field {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.email-lbl, .password-lbl {
+    color: #444;
+    font-size: 16px;
+}
