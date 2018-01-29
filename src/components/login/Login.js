@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
+import _get from 'lodash/get';
+
 // components
 import { Input } from '../formComponents';
 
@@ -42,7 +44,7 @@ class Login extends React.PureComponent {
       { state } = that,
       validUser = credentials.find(({ userId, password }) => userId === state[USER_ID] && password === state[PASSWORD]);
 
-    that.setState({ showError: !validUser }, that.props.onLogin(!!validUser, state[USER_ID], JSON.parse(validUser.watchList)));
+    that.setState({ showError: !validUser }, that.props.onLogin(!!validUser, state[USER_ID], JSON.parse(_get(validUser, 'watchList', "[]"))));
   };
 
   render() {
